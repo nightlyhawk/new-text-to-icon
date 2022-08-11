@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-To-Favicon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="converter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left_cont">
+        <form action="" class="form">
+          <label for="text">Text</label>
+          <input
+            type="text"
+            name="text"
+            placeholder="Icon City"
+            id="text"
+            onchange="customize()"
+          />
+          <label for="font">Font</label>
+          <select name="" id="font">
+            <option value="" selected>'Pacifico', sans-serif</option>
+            <option value="">'Helvetica', sans-serif</option>
+            <option value="">'Arial', sans-serif</option>
+            <option value="">'Arial Black', sans-serif</option>
+            <option value="">'Verdana', sans-serif</option>
+            <option value="">'Tahoma', sans-serif</option>
+            <option value="">'Trebuchet MS', sans-serif</option>
+            <option value="">'Impact', sans-serif</option>
+            <option value="">'Gill Sans', sans-serif</option>
+            <option value="">'Times New Roman', serif</option>
+            <option value="">'Georgia', serif</option>
+            <option value="">'Palatino', serif</option>
+            <option value="">'Baskerville', serif</option>
+            <option value="">'Andalé Mono', monospace</option>
+            <option value="">'Courier', monospace</option>
+            <option value="">'Lucida', monospace</option>
+            <option value="">'Monaco', monospace</option>
+            <option value="">'Bradley Hand', cursive</option>
+            <option value="">'Brush Script MT', cursive</option>
+            <option value="">'Luminari', fantasy</option>
+            <option value="">'Comic Sans MS', cursive</option>
+          </select>
+          <label for="fontColor">Font Color</label>
+          <select name="" id="fontColor">
+            <option value="">Aliceblue</option>
+            <option value="">Antiquewhite</option>
+            <option value="">Aqua</option>
+            <option value="">Aquamarine</option>
+            <option value="">Azure</option>
+            <option value="">Beige</option>
+            <option value="">Bisque</option>
+            <option value="">Black</option>
+            <option value="">Blanchedamond</option>
+            <option value="">Blue</option>
+            <option value="">Blueviolet</option>
+            <option value="">Brown</option>
+            <option value="">Burlywood</option>
+            <option value="">Cadetblue</option>
+            <option value="">Chartreuse</option>
+            <option value="">Chocolate</option>
+            <option value="">Coral</option>
+            <option value="">Cornflowblue</option>
+            <option value="">Cornsilk</option>
+            <option value="">Crimson</option>
+            <option value="">Cyan</option>
+            <option value="">Darkblue</option>
+            <option value="">Darkcyan</option>
+            <option value="">Darkgoldenrod</option>
+            <option value="">Darkgray</option>
+            <option value="">Darkgreen</option>
+            <option value="">Darkgrey</option>
+            <option value="">Darkkhaki</option>
+            <option value="">Darkmagenta</option>
+            <option value="">Darkolivegreen</option>
+            <option value="">Darkorange</option>
+            <option value="">Darkorchid</option>
+            <option value="">Darkred</option>
+            <option value="">Darksalmon</option>
+            <option value="">Darkseagreen</option>
+            <option value="">Darklateblue</option>
+            <option value="">darkturquoise</option>
+            <option value="">Deeppink</option>
+            <option value="">Deepskyblue</option>
+            <option value="">Dimgrey</option>
+            <option value="">Dodgeeblue</option>
+            <option value="">Firebrick</option>
+            <option value="">floralwhite</option>
+            <option value="">Forestgreen</option>
+            <option value="">Fuchsia</option>
+            <option value="">Gainboro</option>
+            <option value="">Ghostwhite</option>
+            <option value="">Gold</option>
+            <option value="">Goldenrod</option>
+            <option value="">Green</option>
+            <option value="">Grey</option>
+            <option value="">Honeydew</option>
+            <option value="">Hotpink</option>
+            <option value="">Indianred</option>
+            <option value="">Indigo</option>
+            <option value="">Ivory</option>
+            <option value="">Khaki</option>
+            <option value="">Lavender</option>
+            <option value="">Lavenderbrush</option>
+            <option value="">Lawngreen</option>
+            <option value="">Lemonchiffon</option>
+            <option value="">Lightblue</option>
+            <option value="">Lightcoral</option>
+            <option value="">Lightcyan</option>
+            <option value="">Lightgray</option>
+            <option value="">Lightgreen</option>
+            <option value="">Lightgrey</option>
+            <option value="">Lightpink</option>
+            <option value="">Lightsalmon</option>
+            <option value="">Lightseagreen</option>
+            <option value="">Lightskyblue</option>
+            <option value="">Lightyellow</option>
+            <option value="">Lime</option>
+            <option value="">Limegreen</option>
+            <option value="">Linen</option>
+            <option value="">Magenta</option>
+            <option value="">Maroon</option>
+            <option value="">Midnightblue</option>
+            <option value="">Mintcream</option>
+            <option value="">Mistyrose</option>
+            <option value="">Moccasin</option>
+            <option value="">Navajowhite</option>
+            <option value="">Navy</option>
+            <option value="">Olive</option>
+            <option value="">Orange</option>
+            <option value="">Orangered</option>
+            <option value="">Orchid</option>
+            <option value="">Palegreen</option>
+            <option value="">Pink</option>
+            <option value="">Red</option>
+            <option value="">Rosybrown</option>
+            <option value="">Plum</option>
+            <option value="">Powerblue</option>
+            <option value="">Purple</option>
+            <option value="">Royalblue</option>
+            <option value="">Sandybrown</option>
+            <option value="">Skyblue</option>
+            <option value="">Seagreen</option>
+            <option value="">Slateblue</option>
+            <option value="">Snow</option>
+            <option value="">Springgreen</option>
+            <option value="">Tan</option>
+            <option value="">Teal</option>
+            <option value="">Tomato</option>
+            <option value="">Transparent</option>
+            <option value="">Turquoise</option>
+            <option value="">Violet</option>
+            <option value="">Wheat</option>
+            <option value="">White</option>
+            <option value="">Yellow</option>
+            <option value="">Yellowgreen</option>
+          </select>
+          <label for="TextSize">Text Size</label>
+          <input type="number" name="fontSize" placeholder="25" id="textSize" />
+          <label for="Color">Background Color</label>
+          <select name="" id="Color">
+            <option value="">Aliceblue</option>
+            <option value="">Antiquewhite</option>
+            <option value="">Aqua</option>
+            <option value="">Aquamarine</option>
+            <option value="">Azure</option>
+            <option value="">Beige</option>
+            <option value="">Bisque</option>
+            <option value="">Black</option>
+            <option value="">Blanchedamond</option>
+            <option value="">Blue</option>
+            <option value="">Blueviolet</option>
+            <option value="">Brown</option>
+            <option value="">Burlywood</option>
+            <option value="">Cadetblue</option>
+            <option value="">Chartreuse</option>
+            <option value="">Chocolate</option>
+            <option value="">Coral</option>
+            <option value="">Cornflowblue</option>
+            <option value="">Cornsilk</option>
+            <option value="">Crimson</option>
+            <option value="">Cyan</option>
+            <option value="">Darkblue</option>
+            <option value="">Darkcyan</option>
+            <option value="">Darkgoldenrod</option>
+            <option value="">Darkgray</option>
+            <option value="">Darkgreen</option>
+            <option value="">Darkgrey</option>
+            <option value="">Darkkhaki</option>
+            <option value="">Darkmagenta</option>
+            <option value="">Darkolivegreen</option>
+            <option value="">Darkorange</option>
+            <option value="">Darkorchid</option>
+            <option value="">Darkred</option>
+            <option value="">Darksalmon</option>
+            <option value="">Darkseagreen</option>
+            <option value="">Darklateblue</option>
+            <option value="">darkturquoise</option>
+            <option value="">Deeppink</option>
+            <option value="">Deepskyblue</option>
+            <option value="">Dimgrey</option>
+            <option value="">Dodgeeblue</option>
+            <option value="">Firebrick</option>
+            <option value="">floralwhite</option>
+            <option value="">Forestgreen</option>
+            <option value="">Fuchsia</option>
+            <option value="">Gainboro</option>
+            <option value="">Ghostwhite</option>
+            <option value="">Gold</option>
+            <option value="">Goldenrod</option>
+            <option value="">Green</option>
+            <option value="">Grey</option>
+            <option value="">Honeydew</option>
+            <option value="">Hotpink</option>
+            <option value="">Indianred</option>
+            <option value="">Indigo</option>
+            <option value="">Ivory</option>
+            <option value="">Khaki</option>
+            <option value="">Lavender</option>
+            <option value="">Lavenderbrush</option>
+            <option value="">Lawngreen</option>
+            <option value="">Lemonchiffon</option>
+            <option value="">Lightblue</option>
+            <option value="">Lightcoral</option>
+            <option value="">Lightcyan</option>
+            <option value="">Lightgray</option>
+            <option value="">Lightgreen</option>
+            <option value="">Lightgrey</option>
+            <option value="">Lightpink</option>
+            <option value="">Lightsalmon</option>
+            <option value="">Lightseagreen</option>
+            <option value="">Lightskyblue</option>
+            <option value="">Lightyellow</option>
+            <option value="">Lime</option>
+            <option value="">Limegreen</option>
+            <option value="">Linen</option>
+            <option value="">Magenta</option>
+            <option value="">Maroon</option>
+            <option value="">Midnightblue</option>
+            <option value="">Mintcream</option>
+            <option value="">Mistyrose</option>
+            <option value="">Moccasin</option>
+            <option value="">Navajowhite</option>
+            <option value="">Navy</option>
+            <option value="">Olive</option>
+            <option value="">Orange</option>
+            <option value="">Orangered</option>
+            <option value="">Orchid</option>
+            <option value="">Palegreen</option>
+            <option value="">Pink</option>
+            <option value="">Red</option>
+            <option value="">Rosybrown</option>
+            <option value="">Plum</option>
+            <option value="">Powerblue</option>
+            <option value="">Purple</option>
+            <option value="">Royalblue</option>
+            <option value="">Sandybrown</option>
+            <option value="">Skyblue</option>
+            <option value="">Seagreen</option>
+            <option value="">Slateblue</option>
+            <option value="">Snow</option>
+            <option value="">Springgreen</option>
+            <option value="">Tan</option>
+            <option value="">Teal</option>
+            <option value="">Tomato</option>
+            <option value="">Transparent</option>
+            <option value="">Turquoise</option>
+            <option value="">Violet</option>
+            <option value="">Wheat</option>
+            <option value="">White</option>
+            <option value="">Yellow</option>
+            <option value="">Yellowgreen</option>
+          </select>
+          <label for="BckShape">Background Shape</label>
+          <select name="" id="BckShape">
+            <option value="">Square</option>
+            <option value="">Circle</option>
+            <option value="">Rounded</option>
+          </select>
+        </form>
+        <label for="img" id="u_btn">
+            <img
+              src="../static/assets/text-to-favicon/uploadup.png"
+              alt=""
+              style="position: inherit; height: 18px"
+            />
+            Upload Logo Image
+          </label>
+          <input type="file" accept="image/svg, image/jpeg, image/png" id="img" onchange="loadFile(event)" hidden />
+      </div>
+      <div class="right_cont" id="right">
+        <div id="label">
+          <span class="span">Logo</span>
+          <span class="span" style="margin-left: 70px">Text</span>
+        </div>
+        <div id="canvas">
+          <img src="./Group 35ic.png" alt="" id="icon" class="iconf" />
+          <p id="iconp" style="overflow: hidden">Icon City</p>
+        </div>
+        <button id="dwn_btn">
+          <img
+            src="./downloaddnw.png"
+            alt=""
+            style="height: 10px; width: 10px; position: inherit"
+          />
+          Download
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
